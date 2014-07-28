@@ -14,5 +14,5 @@ $(call inherit-product, device/lge/dory/device_dory.mk)
 PRODUCT_DEVICE := dory
 PRODUCT_NAME := cm_dory
 PRODUCT_BRAND := lge
-PRODUCT_MODEL := dory
+PRODUCT_MODEL := G Watch
 PRODUCT_MANUFACTURER := lge
