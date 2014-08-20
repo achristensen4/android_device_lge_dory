@@ -7,16 +7,6 @@ $(call inherit-product-if-exists, vendor/lge/dory/dory-vendor.mk)
 
 DEVICE_PACKAGE_OVERLAYS += device/lge/dory/overlay
 
-LOCAL_PATH := device/lge/dory
-ifeq ($(TARGET_PREBUILT_KERNEL),)
-	LOCAL_KERNEL := $(LOCAL_PATH)/kernel
-else
-	LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
-endif
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_KERNEL):kernel
-
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/fstab.dory:recovery/root/fstab.dory
 
